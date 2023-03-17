@@ -3,10 +3,10 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}", ],
   theme: {
     extend: {
-      // backgroundImage: {
-      //   'headerbg': "url('./img/header-background.jpg')",
-      //   'testimonialbg': "url('./img/testimonials-bg.jpg')",
-      // },
+      backgroundImage: {
+        'hero': "url('../src/img/backgroundImg.jpg')",
+        'testimonialbg': "url('./img/testimonials-bg.jpg')",
+      },
       // colors:{
       //   'body': '#17171F',
       //   'selected-text':'#A3A3FF',

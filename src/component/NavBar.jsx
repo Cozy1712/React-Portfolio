@@ -1,16 +1,17 @@
 import React from 'react'
 import { FaTimes, FaBars } from 'react-icons/fa'
 import { useState } from 'react'
-
+import backgroundImg from '../img/backgroundImg.jpg'
 const NavBar = () => {
     const [nav, setNav] = useState(false);
 
 
   return (
-    <nav className='flex items-center justify-center   bg-sky-800 w-full h-20 px-4  '>
-        {/* <div>
-            <h1 className='capitalize text-white font-signature text-5xl ml-2' text>cozy</h1>
-        </div> */}
+    <div >
+    <nav className=' flex items-center justify-center absolute bg-slate-700 opacity-100 w-full h-10 px-4  '>
+        <div>
+            {/* <h1 className='capitalize text-white font-signature text-5xl ml-2' text>cozy</h1> */}
+        </div>
         <ul className='hidden md:flex'>
             <li className='px-10 font-medium text-gray-300 hover:text-amber-600  hover:scale-105 duration-200 capitalize'>
                 <a href="#home">home</a>
@@ -50,6 +51,7 @@ const NavBar = () => {
         
      
     </nav>
+    </div>
   )
 }
 
