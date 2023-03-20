@@ -9,37 +9,39 @@ import {BsStars} from 'react-icons/bs'
 
 const About = () => {
   return (
-    <div className='bg-slate-600 w-full'>
-    
-        <div className='max-w-screen-lg p-4 mx-auto flex flex-col w-full h-full '>
-            <div className='content flex py-2'>
-                <img src={cozy} alt="cozy" className=' mx-auto rounded-3xl w-2/6'/>
-
-                <div className='flex flex-col text-white pb-8  px-10 py-5 item-body'>
-                    <p className='text-4xl font-bold capitalize'>about</p>
-                    <div>
-                        <p className='tezt-xl mt-20' >
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime esse at vero non mollitia numquam saepe fuga voluptate consectetur beatae eligendi sequi, aut dolorem aliquid vel? Beatae ea quam amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum qui ratione, saepe ipsa eos distinctio nemo veritatis mollitia quibusdam tempora possimus fugit sint eveniet enim beatae obcaecati non odio debitis?.
-                        </p>
-                    </div>
-                      <div className='text-white list-none flex fill-gray py-8 px-8'>
-                        <ul className='grid grid-cols-2 gap-10  capitalize'>
-                        <li className='flex '><FiMap size={20} st />location: abuja</li>
-                        <li className='flex '><VscCalendar size={20} />age: 23</li>
-                        <li className='flex'><AiTwotoneFlag size={20} />nationality: nigeria</li>
-                        <li className='flex'><BsStars size={20} />interests: video-game</li>
-                        <li className='flex'><GiGraduateCap size={20} />school: koladiasi university</li>
-                        <li className='flex'><HiBuildingOffice size={20} />employment: none</li>
-                      
-                        </ul>
-
-
-                      </div>
-                </div>
+    <div name="about" className='bg-slate-500 w-full text-gray-300'>
+      <div className='max-w-screen-lg p-6 mx-auto grid grid-flow-row w-full h-full'>
+        <div  className='content md:flex py-2'>
+          <img src={cozy} alt="cozy" className=' mx-auto rounded-3xl w-40 h-40 md:mt-36'/>
+          <div className='md:flex md:flex-col text-gray-300 pb-4 px-2 py-4 md:item-body'>
+            <div>
+              <p className='text-3xl font-semibold border-b-2 inline capitalize'>about me</p>
             </div>
-        
-        </div>
+
+            <div>
+              <p className='text-xl mt-20'>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis,
+                 quia voluptatem. Ea adipisci, aliquid iste alias maxime quaerat 
+                 dolore ullam minus possimus cum qui eaque fuga consequatur esse, vitae numquam.
+              </p>
+            </div>
+            <div className='text-white list-none flex fill-gray py-8'>
+              <ul className='grid grid-cols-2 gap-10 md:grid-cols-3  capitalize'>
+                <li className='flex '><FiMap size={30} />location: abuja</li>
+                <li className='flex '><VscCalendar size={30} />age: 23</li>
+                <li className='flex'><AiTwotoneFlag size={30} />nationality: nigeria</li>
+                <li className='flex'><BsStars size={40} />interests: video-game, developing-software</li>
+                <li className='flex'><GiGraduateCap size={30} />school: koladiasi university</li>
+                <li className='flex'><HiBuildingOffice size={30} />employment: none</li>
+              </ul>
+            </div>
             
+          </div>
+
+        </div>
+
+      </div>
+
     </div>
   )
 }

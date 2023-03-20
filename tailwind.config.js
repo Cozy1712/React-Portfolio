@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'hero': "url('../src/img/backgroundImg.jpg')",
-        'testimonialbg': "url('./img/testimonials-bg.jpg')",
+        'expbg': "url('../src/img/testimonials-bg.jpg')",
       },
       // colors:{
       //   'body': '#17171F',
