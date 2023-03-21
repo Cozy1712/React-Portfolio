@@ -1,11 +1,26 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import {MdMailOutline} from 'react-icons/md'
 import { FaGithub } from 'react-icons/fa'
-import {SlSocialTwitter,SlPhone} from 'react-icons/sl'
+import {SlPhone} from 'react-icons/sl'
 import {CiLocationOn} from 'react-icons/ci'
 import {RxInstagramLogo} from 'react-icons/rx'
+import emailjs from '@emailjs/browser'
 
 const Contact = () => {
+
+   const form = useRef();
+
+   const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendEmail('S_ID','T_ID', form.current,'P_KEY')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) =>{
+            console.log(error.text)
+        });
+   };
+
     const icons = [
         {
             id: 1,
@@ -15,7 +30,7 @@ const Contact = () => {
                 <p className='px-2'>+234 913-132-3845</p>
                 </>
             ),
-            href: 'mailto:foo@gamail.com',
+            href: 'tel:+234-913-132-3845',
         },
         {
             id: 2,
@@ -25,7 +40,7 @@ const Contact = () => {
                 <p className='px-2'>kolawolekabiru@gmail.com</p>
                 </>
             ),
-            href: 'mailto:foo@gamail.com',
+            href: 'https://mailto:foo@gamail.com',
         },
         {
             id: 3,
@@ -35,7 +50,7 @@ const Contact = () => {
                 <p className='px-2'>Abuja, Nigeria</p>
                 </>
             ),
-            href: 'mailto:foo@gamail.com',
+            href: 'https://maps.app.goo.gl/RVdMpwvGpAnffE888',
         },
         {
             id: 4,
@@ -45,7 +60,7 @@ const Contact = () => {
                 <p className='px-2'>kolaakangbe</p>
                 </>
             ),
-            href: 'mailto:foo@gamail.com',
+            href: 'https://instagram.com/Cozy1712',
         },
         {
             id: 5,
@@ -55,11 +70,11 @@ const Contact = () => {
                 <p className='px-2'>@Cozy1712</p>
                 </>
             ),
-            href: 'mailto:foo@gamail.com',
+            href: 'https://github.com/Cozy1712',
         },
     ]
   return (
-    <div name='contact' className='bg-zinc-800 w-full h-full'>
+    <div name='contact' className='bg-zinc-700 w-full h-full'>
         <div className='max-w-screen-lg mx-auto flex flex-col justify-center w-full h-full'>
             <div className='flex py-6 px-4 sm:justify-center  sm:mr-80 '>
                 <p className='px-4 mt-2 text-gray-300'> <MdMailOutline size={30}/></p>
@@ -67,8 +82,8 @@ const Contact = () => {
             </div>
 
             <div>
-                <div className='sm:grid sm:grid-flow-col justify-center items-center sm:ml-14'>
-                    <form action="" className='flex flex-col py-4 px-8 w-auto sm:w-96 content'>
+                <div className='sm:grid sm:grid-flow-col justify-center items-center'>
+                    <form ref={form} onSubmit={sendEmail} className='flex flex-col py-4 px-7 w-auto sm:w-96'>
                         <input type="text" placeholder='Name' className='px-2 rounded-md'/>
                         <input type="text" placeholder='Email' className='my-4 px-2 rounded-md' />
                         <textarea name="msg" id="message" cols="10" rows="5" placeholder='Message'
@@ -79,12 +94,12 @@ const Contact = () => {
                             <button className='text-center py-1 felx'>Send Message</button>
                         </div>
                     </form>
-                    <div className='px-8 mb-10  text-gray-200'>
+                    <div className=' px-8 mb-10  text-gray-200'>
                         <p>Here you can get in touch with me</p>
                         <div>
-                            {icons.map(({id,child,herf,style}) =>(
+                            {icons.map(({id,child,href}) =>(
                                 <li key={id} className={'list-none my-2 py-0.5 cursor-pointer'}>
-                                <a href={herf} className='flex'>
+                                <a href={href} className='flex'>
                                     {child}
                                 </a>
                             </li>

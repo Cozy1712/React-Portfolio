@@ -1,13 +1,14 @@
 import React from 'react'
-import html from '../img/html.jpg'
-import javascript from '../img/javascript.png'
-import css from '../img/css.png'
-import nodejs from '../img/nodejs.png'
-import github from '../img/github.png'
-import php from '../img/php.png'
-import tailwind from '../img/tailwind.png'
-import sql from '../img/sql.png'
-import react from '../img/react.png'
+import html from '../assets/html.jpg'
+import javascript from '../assets/javascript.png'
+import css from '../assets/css.png'
+import nodejs from '../assets/nodejs.png'
+import github from '../assets/github.png'
+import php from '../assets/php.png'
+import tailwind from '../assets/tailwind.png'
+import sql from '../assets/sql.png'
+import react from '../assets/react.png'
+
 
 const Experience = () => {
     const exp =[

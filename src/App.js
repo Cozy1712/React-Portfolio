@@ -5,8 +5,10 @@ import NavBar from './component/NavBar';
 import About from './component/About';
 import Portfolio from './component/Portfolio';
 import Experience from './component/Experience';
+import Footer from './component/Footer'
 import { BrowserRouter as Router } from 'react-router-dom';
 import Contact from './component/Contact';
+import Work from './component/Work';
 
 function App() {
   return (
@@ -15,9 +17,10 @@ function App() {
            <Home/> 
            <About/>
            <Portfolio/>
-
+           <Work/>
            <Experience/>
            <Contact/>
+           <Footer/>
         </Router>
 
    

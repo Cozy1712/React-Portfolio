@@ -4,8 +4,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'hero': "url('../src/img/backgroundImg.jpg')",
-        'expbg': "url('../src/img/testimonials-bg.jpg')",
+        'hero': "url('../src/assets/backgroundImg.jpg')",
+        'expbg': "url('../src/assets/testimonials-bg.jpg')",
       },
       // colors:{
       //   'body': '#17171F',

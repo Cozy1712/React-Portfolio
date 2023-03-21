@@ -1,5 +1,5 @@
 import React from 'react'
-import cozy from '../img/cozy.jpg'
+import cozy from '../assets/cozy.jpg'
 import {FiMap} from 'react-icons/fi'
 import {VscCalendar} from 'react-icons/vsc'
 import {GiGraduateCap} from 'react-icons/gi'
