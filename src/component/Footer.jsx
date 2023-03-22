@@ -16,7 +16,7 @@ const Footer = () => {
             </>
             ),
             href: 'https://github.com/Cozy1712',
-            style: 'px-3',
+            style: 'px-3 justify-between',
         },
         {
             id: 2,
@@ -26,7 +26,7 @@ const Footer = () => {
             </>
             ),
             href: 'https://twitter.com/@Cozy1712',
-            style: 'px-3',
+            style: 'px-4',
         },
         {
             id: 3,
@@ -36,7 +36,7 @@ const Footer = () => {
             </>
             ),
             href: 'https://instagram.com/Cozy1712',
-            style: 'px-3',
+            style: 'px-4',
         },
         {
             id: 4,
@@ -46,7 +46,7 @@ const Footer = () => {
             </>
             ),
             href: 'mailto:foo@gamail.com',
-            style: 'px-3',
+            style: 'px-4',
         },
     ]
   return (<div className='bg-zinc-800 w-full '>

@@ -52,9 +52,9 @@ const SocialLinks = () => {
   return (
     <div>
        <div className=' text-white flex justify-center '>
-            <ul className='flex '>
+            <ul className='flex px-4'>
                 {links.map(({id,child,href,style}) =>(
-                    <li key={id} className={'hover:text-amber-600 '+ style}>
+                    <li key={id} className={`hover:text-amber-600  hover:ease-in-out hover:duration-200 ${style}`}>
                         <a href={href} className="px-2">
                             {child}
                         </a>

@@ -8,7 +8,7 @@ import SocialLinks from './SocialLinks'
 const Home = () => {
   
   return (
-    <div name='home' className="bg-hero bg-cover bg-center h-screen bg-fixed">
+    <div name='home' className="bg-hero bg-cover bg-center h-screen bg-fixed w-full">
         <div  className=' item-center text-center justify-center  flex flex-col  md:flex-row h-full px-4'>
             <div className='items-center max-w-screen-lg mb-54 md:mt-80 text-center justify-center flex flex-col px-4 '>
                 <div className='text-center box-border text-gray-300 capitalize rounded-xl border-transparent  bg-zinc-800 bg-opacity-50 w-fit md:p-5'>
