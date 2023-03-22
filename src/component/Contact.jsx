@@ -13,7 +13,7 @@ const Contact = () => {
    const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendEmail('S_ID','T_ID', form.current,'P_KEY')
+        emailjs.sendEmail('service_fifn07b','template_7edmyni', form.current,'3-RYS4qHEhAOaewIrUKND')
         .then((result) => {
             console.log(result.text);
         }, (error) =>{
