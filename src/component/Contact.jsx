@@ -15,8 +15,10 @@ const Contact = () => {
 
         emailjs.sendEmail('service_fifn07b','template_7edmyni', form.current,'3-RYS4qHEhAOaewIrUKND')
         .then((result) => {
+            window.location.reload() // pagereload
             
         }, (error) =>{
+            console.log(error.text)
         
         });
    };
