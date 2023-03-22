@@ -90,7 +90,7 @@ const Contact = () => {
                     ></textarea>
                     <div className='text-gray-300 border-2 rounded-full bg-gray-600 w-fit h-10 px-2 mt-4 hover:bg-gradient-to-r hover:from-orange-500 hover:to-amber-700 border-sky-600'
                     >
-                        <button className='text-center py-1 felx'>Send Message</button>
+                        <button type='submit' className='text-center py-1 felx'>Send Message</button>
                     </div>
                 </form>
                 <div className=' px-8 mb-10  text-gray-200'>
