@@ -35,7 +35,7 @@ const SocialLinks = () => {
             <RxInstagramLogo size={30}/>
             </>
             ),
-            href: 'https://instagram.com/Cozy1712',
+            href: 'https://instagram.com/kolaakangbe',
             style: 'px-3',
         },
         {
