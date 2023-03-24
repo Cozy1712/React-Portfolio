@@ -15,7 +15,7 @@ const Home = () => {
                     <h1 className='text-3xl font-signature sm:text-4xl'>welcome to my dom</h1>
                     <h2 className='text-xl py-2 sm:text-3xl'>i'm kabiru kolawole</h2>
                     <p className='py-4 text-sm sm:text-sm'> 
-                        full stack developer, base in abuja <br/>studing software engineering.
+                        full stack developer, based in abuja <br/>studying software engineering.
                     </p>
 
                     <div>
