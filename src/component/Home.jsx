@@ -8,7 +8,7 @@ import SocialLinks from './SocialLinks'
 const Home = () => {
   
   return (
-    <div name='home' className="bg-hero bg-cover bg-center h-screen bg-fixed w-full overflow-x-hidden">
+    <div name='home' className="bg-hero bg-cover bg-center h-screen bg-fixed w-full overflow-hidden ">
         <div  className=' item-center text-center justify-center  flex flex-col  md:flex-row h-full px-4'>
             <div className='items-center max-w-screen-lg mb-54 md:mt-80 text-center justify-center flex flex-col px-4 '>
                 <div className='text-center box-border text-gray-300 capitalize rounded-xl border-transparent  bg-zinc-800 bg-opacity-50 w-fit md:p-5'>
@@ -32,7 +32,7 @@ const Home = () => {
                             </span>
                         </buttton> 
                         <Link  to='contact' className= ' cursor-pointer rounded-full w-fit bg-slate-600 text-lg py-2 px-6 sm:mx-2 text-center hover:bg-gradient-to-r hover:from-amber-800 hover:to-amber-600 ease-in-out duration-200'
-                        > conctact
+                        > contact
                         </Link> 
                         
                     </div>
