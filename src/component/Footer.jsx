@@ -35,7 +35,7 @@ const Footer = () => {
             <RxInstagramLogo size={20}/>
             </>
             ),
-            href: 'https://instagram.com/kolaakangbe',
+            href: 'https://instagram.com/cozy_senpia',
             style: 'px-4',
         },
         {

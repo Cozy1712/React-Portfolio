@@ -20,9 +20,7 @@ const About = () => {
 
             <div>
               <p className='text-xl mt-20'>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis,
-                 quia voluptatem. Ea adipisci, aliquid iste alias maxime quaerat 
-                 dolore ullam minus possimus cum qui eaque fuga consequatur esse, vitae numquam.
+              I am a skilled software engineer with over 3 years of experience in the financial technology sector. I specialize in designing, developing, and maintaining scalable applications, and I have strong expertise in system architecture, the software development lifecycle (SDLC), and agile methodologies. Proficient in Java, Python, and JavaScript, I excel at collaborating with cross-functional teams to deliver high-quality code and innovative solutions. I hold a Bachelor of Science in Software Engineering from KolaDaisi University and am certified in Backend Development with NodeJS. Passionate about continuous learning and improvement, I am committed to advancing technology and contributing to impactful projects.
               </p>
             </div>
             <div className='text-white list-none flex fill-gray py-8'>

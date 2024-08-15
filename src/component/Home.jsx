@@ -24,13 +24,17 @@ const Home = () => {
                     </div>
 
                     <div className='flex justify-center p-4'>
-                        <buttton className=
+                        <a href="/src/assets/resume.pdf" 
+                        
+                        download="resume.pdf"
+                        className=
                          'cursor-pointer rounded-full w-fit bg-slate-600 text-lg py-2 px-6 flex sm:mx-2 mx-1 text-center hover:bg-gradient-to-r hover:from-amber-800 hover:to-amber-600 ease-in-out duration-200'
+                         
                         > resume
                             <span className='px-1 py-1'>
                             <FiArrowDown/>
                             </span>
-                        </buttton> 
+                        </a> 
                         <Link  to='contact' className= ' cursor-pointer rounded-full w-fit bg-slate-600 text-lg py-2 px-6 sm:mx-2 text-center hover:bg-gradient-to-r hover:from-amber-800 hover:to-amber-600 ease-in-out duration-200'
                         > contact
                         </Link> 
@@ -38,13 +42,13 @@ const Home = () => {
                     </div>
                     
                 </div>
-                <div className='item-centre justify-center ml-64 h-10 mt-24 lg:mb-60'>
-                    <svg className=' text-white cursor-pointer'>
-                       <Link
-                        to='about' smooth duration={700}>
-                            <IoChevronDownCircleSharp size={40}/>
-                        </Link> 
-                    </svg>
+                <div className='flex justify-center h-10 mt-32 lg:mb-60 transform translate-y-12'>
+                    <Link
+                    to='about' smooth={true} duration={700}>
+                        <IoChevronDownCircleSharp size={40} 
+                        className=' text-white cursor-pointer'
+                        /> 
+                    </Link> 
                 </div>
                 
             </div>
